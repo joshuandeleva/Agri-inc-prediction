@@ -5,6 +5,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" type="image/x-icon" href="./images/iconX.svg" />
 	<title>Agri Insurance</title>
 	<!--------bootstrap  links ------------------>
 	<link rel="stylesheet" href="./css/all.min.css" />
@@ -19,6 +20,7 @@
 	<script src="./splide/dist/js/splide.min.js"></script>
 	<!--------javascript files------------------>
 	<script src="./js/bootstrap.js"></script>
+	<script src="./js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -33,26 +35,31 @@
 					<a href="">Agri-Inc</a>
 				</div>
 				<div class="HomeNavbarMainCenter">
-					<ul>
-						<li><a href="/">Product</a></li>
-						<li>
+					<ul class="main-nav-c">
+						<li class="navListItem"><a href="/">Product</a>
+							<ul class="navListItemdrop">
+								<li><a href="/yields.html">Crop yields predictor</a></li>
+								<li><a href="/cropgrow.html">Crop grow predictor</a></li>
+							</ul>
+						</li>
+						<li class="navListItem">
 							<a href="/">Company</a>
-							<ul>
+							<ul class="navListItemdrop">
 								<li><a href="">About us</a></li>
 								<li><a href="">Research</a></li>
 								<li><a href="">Careers</a></li>
 							</ul>
 						</li>
-						<li><a href="/">How it works</a></li>
-						<li>
+						<li class="navListItem"><a href="/howitworks.html">How it works</a></li>
+						<li class="navListItem">
 							<a href="/">Solutions</a>
-							<ul>
+							<ul class="navListItemdrop">
 								<li><a href="">Farmers corner</a></li>
 								<li><a href="">Insurance Premiums</a></li>
 								<li><a href="">Consultancy</a></li>
 							</ul>
 						</li>
-						<li><a href="/">Blog</a></li>
+						<li class="navListItem"><a href="/">Blog</a></li>
 					</ul>
 				</div>
 				<div class="HomeNavbarMainRight">
@@ -78,7 +85,7 @@
 						<button>Start Free Trial</button>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 col-lg-6">
+				<div class="col-sm-12 col-md-6 col-lg-6 homeIntro__rightIm">
 					<div class="homeIntro__right">
 						<img src="./images/garden.svg" alt="">
 					</div>
@@ -96,7 +103,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12 col-lg-3 col-md-2">
+				<div class="col-sm-12 col-lg-3 col-md-2 main-step">
 					<div class="step-item">
 						<div class="step-icon">
 							<i class="fas fa-spinner fa-2x"></i>
@@ -109,7 +116,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-lg-3 col-md-2">
+				<div class="col-sm-12 col-lg-3 col-md-2 main-step">
 					<div class="step-item">
 						<div class="step-icon">
 							<i class="fas fa-rocket fa-2x"></i>
@@ -122,7 +129,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-lg-3 col-md-2">
+				<div class="col-sm-12 col-lg-3 col-md-2 main-step">
 					<div class="step-item">
 						<div class="step-icon">
 							<i class="fas fa-industry fa-2x"></i>
@@ -135,7 +142,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-lg-3 col-md-2">
+				<div class="col-sm-12 col-lg-3 col-md-2 main-step">
 					<div class="step-item">
 						<div class="step-icon">
 							<i class="fas fa-poll-h fa-2x"></i>
@@ -152,68 +159,7 @@
 		</div>
 	</div>
 	<!--------------How it works ends-->
-	<!-------------free trial starts-->
-	<div class="freeTrial">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-6 col-lg-6 FreeM">
-					<div class="freeTrial__left">
-						<h3>Get free Trial Today</h3>
-						<h6>You can upgrade to premium after one week of trial No credit
-							Card
-							needed</h6>
-						<p>Agri-Inc is the currently the number one paltform that allows the farmer to predict farm
-							yields ,get advice on where to advance on his farming skills.
-							Lets fight poor yields and apply our tools for the better</p>
-						<button><a href="">Start Free Trial</a></button>
-					</div>
-				</div>
-				<div class="col-sm-12 col-md-6 col-lg-6 freeTrialLeftM">
-					<div class="freeTrial__right">
-						<p> Dear Farmer kindly fill the form below </p>
-						<div class="trialForm">
-							<form action="">
-								<div class="trialForm-group">
-									<label for="">Enter your temperature</label>
-									<input type="number " min="0 " required name="temperature " />
-								</div>
-								<div class="trialForm-group">
-									<label for="">Enter your Humidity</label>
-									<input type="number " min="0 " required name="temperature " />
-								</div>
-								<div class="trialForm-group">
-									<label for="">Enter your soil PH level</label>
-									<input type="number " min="0 " required name="temperature " />
-								</div>
-								<div class="trialForm-group">
-									<label for="">Enter rainfall amount in mm </label>
-									<input type="number " min="0 " required name="temperature " />
-								</div>
-								<div class="trialForm-group">
-									<label for="">Enter your land size in square metres</label>
-									<input type="number " min="0 " required name="temperature " />
-								</div>
-								<div class="trialForm-group">
-									<label for="">Enter your Environmental pressure</label>
-									<input type="number " min="0 " required name="temperature " />
-								</div>
-								<div class="trialForm-group">
-									<label for="">Enter your total cost inccured</label>
-									<input type="number " min="0 " required name="temperature " />
-								</div>
-								<div class="trialForm-group">
-									<button type="submit " required class="submit ">
-										Predict
-									</button>
-								</div>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-------------free trial ends-->
+
 	<!--------------services home page starts-->
 	<div class="servicesHome">
 		<div class="container">
@@ -229,7 +175,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-sm-12 col-md-6 col-lg-6">
+				<div class="col-sm-12 col-md-6 col-lg-6 mainServ-1">
 					<div class="service__img">
 						<img src="./images/farmcorner.svg" alt="">
 					</div>
@@ -280,12 +226,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 col-lg-6">
+				<div class="col-sm-12 col-md-6 col-lg-6 mainServ-1">
 					<div class="service__img">
 						<img src="./images/credit.svg" alt="">
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6 col-lg-6">
+				<div class="col-sm-12 col-md-6 col-lg-6 mainServ-1">
 					<div class="service__img">
 						<img src="./images/consult2.svg" alt="">
 					</div>
@@ -449,6 +395,9 @@
 	<script>
 		document.querySelector('.menu-icon').addEventListener('click', () => document.querySelectorAll('.HomeNavbarMainCenter').classList.toggle('show'))
 	</script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/bootstrap.js"></script>
 </body>
 
 </html>

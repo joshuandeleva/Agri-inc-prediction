@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/iconX.svg" />
+    <title>Agri Insurance |Yields predictions</title>
+    <!--------bootstrap  links ------------------>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css//bootstrap.min.css" />
+    <!--------Fontawesome icons ------------------>
+    <link rel="stylesheet" href="./fontawesome-free-5.0.1/css/fontawesome-all.css" />
+    <!--------css styles ------------------>
+    <!--------splide css-->
+    <link rel="stylesheet" href="./splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="./css/style.css" />
+    <!---------splide slider-->
+    <script src="./splide/dist/js/splide.min.js"></script>
+    <!--------javascript files------------------>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery.min.js"></script>
+</head>
+
+<body>
+    <!--------------navbar starts-->
+    <div class="menu-icon">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="HomeNavbar">
+        <div class="container">
+            <div class="HomeNavbarMain">
+                <div class="HomeNavbarMain__logo">
+                    <a href="">Agri-Inc</a>
+                </div>
+                <div class="HomeNavbarMainCenter">
+                    <ul class="main-nav-c">
+                        <li class="navListItem"><a href="/">Product</a>
+                            <ul class="navListItemdrop">
+                                <li><a href="/yields.html">Crop yields predictor</a></li>
+                                <li><a href="/cropgrow.html">Crop grow predictor</a></li>
+                            </ul>
+                        </li>
+                        <li class="navListItem">
+                            <a href="/">Company</a>
+                            <ul class="navListItemdrop">
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Research</a></li>
+                                <li><a href="">Careers</a></li>
+                            </ul>
+                        </li>
+                        <li class="navListItem"><a href="/howitworks.html">How it works</a></li>
+                        <li class="navListItem">
+                            <a href="/">Solutions</a>
+                            <ul class="navListItemdrop">
+                                <li><a href="">Farmers corner</a></li>
+                                <li><a href="">Insurance Premiums</a></li>
+                                <li><a href="">Consultancy</a></li>
+                            </ul>
+                        </li>
+                        <li class="navListItem"><a href="/">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="HomeNavbarMainRight">
+                    <ul>
+                        <li><a href="/">Free trial</a></li>
+                        <li><a href="/" class="contact-">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------navbar ends-->
+    <!-------------free trial starts-->
+    <div class="freeTrial">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 FreeM">
+                    <div class="freeTrial__left">
+                        <h3>Get free Trial Today</h3>
+                        <h6>You can upgrade to premium after one week of trial No credit
+                            Card
+                            needed</h6>
+                        <p>Agri-Inc is the currently the number one paltform that allows the farmer to predict farm
+                            yields ,get advice on where to advance on his farming skills.
+                            Lets fight poor yields and apply our tools for the better</p>
+                        <button><a href="">Start Free Trial</a></button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 freeTrialLeftM">
+                    <div class="freeTrial__right">
+                        <p> Dear Farmer kindly fill the form below </p>
+                        <div class="trialForm">
+                            <form action="">
+                                <div class="trialForm-group">
+                                    <label for="">Enter your temperature</label>
+                                    <input type="number " min="0 " required name="temperature " />
+                                </div>
+                                <div class="trialForm-group">
+                                    <label for="">Enter your Humidity</label>
+                                    <input type="number " min="0 " required name="temperature " />
+                                </div>
+                                <div class="trialForm-group">
+                                    <label for="">Enter your soil PH level</label>
+                                    <input type="number " min="0 " required name="temperature " />
+                                </div>
+                                <div class="trialForm-group">
+                                    <label for="">Enter rainfall amount in mm </label>
+                                    <input type="number " min="0 " required name="temperature " />
+                                </div>
+                                <div class="trialForm-group">
+                                    <label for="">Enter your land size in square metres</label>
+                                    <input type="number " min="0 " required name="temperature " />
+                                </div>
+                                <div class="trialForm-group">
+                                    <label for="">Enter your Environmental pressure</label>
+                                    <input type="number " min="0 " required name="temperature " />
+                                </div>
+                                <div class="trialForm-group">
+                                    <label for="">Enter your total cost inccured</label>
+                                    <input type="number " min="0 " required name="temperature " />
+                                </div>
+                                <div class="trialForm-group">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="" data-toggle="modal"
+                                        data-target="#exampleModalCenter">
+                                        Predict
+                                    </button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLongTitle">Prediction
+                                                        Results</h5>
+                                                </div>
+                                                <div class="modal-body">
+                                                    ...
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="close-btn1"
+                                                        data-dismiss="modal">Close</button>
+                                                    <button type="button" class="visit-technician">Visit
+                                                        technician</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------free trial ends-->
+    <!--------------footer-->
+    <div class="my__footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-item-title">
+                            <P>Agri-Inc</P>
+                        </div>
+                        <h6>We are the Leading Consulting Organization in Kenya.
+                            Preserve and protect biodiversity and territories Optimize the use of natural resources
+                            Manage the quality of air, water and soil increase energy efficiency in food production and
+                            distribution</p>
+                        </h6>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-item-title">
+                            <P>Quick Links</P>
+                        </div>
+                        <div class="social-media-icons">
+                            <a href="" class="fab fa-twitter"></a>
+                            <a href="" class="fab fa-facebook"></a>
+                            <a href="" class="fab fa-instagram"></a>
+                            <a href="" class="fab fa-linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-item-title">
+                            <P>Company</P>
+                        </div>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Research</a></li>
+                        <li><a href="">Contact us</a></li>
+                        <li><a href="">Blog</a></li>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                    <div class="footer-item">
+                        <div class="footer-item-title">
+                            <P>Solutions</P>
+                        </div>
+                        <li><a href="">Crop yield monitoring</a></li>
+                        <li><a href="">Farmers corner</a></li>
+                        <li><a href="">Insurance</a></li>
+                        <li><a href="">Consultancy</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------footer ends-->
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', () => document.querySelectorAll('.HomeNavbarMainCenter').classList.toggle('show'))
+    </script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>
